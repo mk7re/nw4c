@@ -1,7 +1,10 @@
 #pragma once
 
+#include "Drawer.hpp"
+#include "Material.hpp"
 #include "Pane.hpp"
 #include "Size.hpp"
+#include "../math/math_types.hpp"
 #include "../ut/Color.hpp"
 
 namespace nw::lyt
@@ -42,6 +45,12 @@ namespace nw::lyt
         virtual void FreeStringBuffer();
         virtual u16 SetString(const wchar_t *, u16);
 
+        Textbox();
+        f32 AdjustTextPos(const Size&, bool) const;
+        void GetTextGlobalMtx(nn::math::MTX34*) const;
+        void Init(u16);
+        void SetupDrawCharData(Drawer*);
+
         wchar_t* mTextBuf;
         nw::ut::Color8 mTextColors[TEXTCOLOR_MAX];
         void* mpFont;
@@ -53,7 +62,7 @@ namespace nw::lyt
         u16 mTextLen;
         u8 mTextPosition;
         u8 mFlags;
-        void* mpMaterial;
+        Material* mpMaterial;
         void** mppDispStringBuffer;
         u8 mOutlineColor;
     };
