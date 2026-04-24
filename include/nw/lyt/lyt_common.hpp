@@ -17,7 +17,7 @@ enum VertexColor {
     VERTEXCOLOR_MAX
 };
 
-typedef nn:math::VEC2 TexCoord[VERTEXCOLOR_MAX];
+typedef nn::math::VEC2 TexCoord[VERTEXCOLOR_MAX];
 
 }
 }
