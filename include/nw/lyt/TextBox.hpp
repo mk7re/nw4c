@@ -4,7 +4,7 @@
 #include "Material.hpp"
 #include "Pane.hpp"
 #include "Size.hpp"
-#include "../math/math_types.hpp"
+#include <nn/math/MTX.h>
 #include "../ut/Color.hpp"
 
 namespace nw::lyt

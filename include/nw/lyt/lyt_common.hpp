@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../ut/types.hpp"
-#include "../math/math_types.hpp"
+#include <nn/math/VEC.h>
 
 namespace nw::lyt
 {
@@ -17,7 +17,7 @@ enum VertexColor {
     VERTEXCOLOR_MAX
 };
 
-typedef math::VEC2 TexCoord[VERTEXCOLOR_MAX];
+typedef nn:math::VEC2 TexCoord[VERTEXCOLOR_MAX];
 
 }
 }

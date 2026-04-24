@@ -33,11 +33,11 @@ namespace nw::lyt
         virtual void SetVtxColorElement(u32, u8);
         virtual u32 GetMaterialNum() const;
         virtual Material *GetMaterial(u32) const;
-        virtual PaneBase *FindPaneByName(const char *, bool)();
+        virtual Pane *FindPaneByName(const char *, bool);
         virtual Material *FindMaterialByName(const char *, bool);
         virtual void Animate(u32);
         virtual void AnimateSelf(u32);
-        virtual void BindAnimation(nAnimTransform *, bool, bool);
+        virtual void BindAnimation(AnimTransform *, bool, bool);
         virtual void UnbindAnimation(AnimTransform *, bool);
         virtual void m_0x44();
         virtual void UnbindAnimationSelf(AnimTransform *);
@@ -62,7 +62,7 @@ namespace nw::lyt
         f32 GetVtxPos() const;
         ut::Rect GetPaneRect() const;
         Material *GetMaterial() const;
-        void AddAnimationLink(AnimationLink *)
+        void AddAnimationLink(AnimationLink *);
 
         Pane *m_parent;
         PaneList m_child_list;

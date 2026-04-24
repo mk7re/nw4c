@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../math/math_types.hpp"
 #include "DrawInfo.hpp"
+#include <nn/math/MTX.h>
 
 namespace nw::lyt
 {
