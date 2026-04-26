@@ -45,7 +45,7 @@ namespace nw::lyt
         virtual void FreeStringBuffer();
         virtual u16 SetString(const wchar_t *, u16);
 
-        Textbox();
+        TextBox();
         f32 AdjustTextPos(const Size&, bool) const;
         void GetTextGlobalMtx(nn::math::MTX34*) const;
         void Init(u16);
